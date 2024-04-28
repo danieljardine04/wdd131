@@ -1,0 +1,67 @@
+header {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 3px;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  font-weight: 400;
+  background-color: darkgray;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.card {
+  margin: 2px;
+  border: 3px solid navy;
+}
+
+#left{
+  grid-column: 1/2;
+}
+
+#right{
+  grid-column: 2/2;
+}
+#right p {
+  text-align: center;
+  align-items: center;
+}
+
+#picture {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+
+
+nav a:hover {
+  color: lightgreen;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+}
