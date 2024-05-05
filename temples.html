@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description"  content="A temples page that changes depending on how big the screen is" >
+  <meta name="author" content="Daniel Jardine">
+  <link rel="stylesheet" href="./styles/temples.css">
+  <link rel="stylesheet" href="./styles/temples-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <a id="menu" href="#"></a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Home" class="active">Home</a></li>
+        <li><a href="#" title="Old" class="active">Old</a></li>
+        <li><a href="#" title="New" class="active">New</a></li>
+        <li> <a href="#" title="Large" class="active">Large</a></li>
+        <li><a href="#" title="Small" class="active">Small</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <h2 id="text">Home</h2>
+    <section class="grid">
+      <div>
+        <figure>
+          <img src="./images/boston-temple-lds-926957-wallpaper.jpg" alt="Picture of Boston Temple">
+          <figcaption>Boston MA Temple</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="./images/gilbert-arizona-temple.jpg" alt="Picture of Gilbert Temple">
+          <figcaption>Gilbert AZ Temple</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="/images/Hartford-Temple01.jpg" alt="Picture of Hartford Temple">
+          <figcaption>Hartford CT Temple</figcaption>
+        </figure>
+
+      </div>
+      <div>
+        <figure>
+          <img src="./images/mesa_arizona_temple_main.jpeg" alt="Picture of Mesa Temple">
+          <figcaption>Mesa AZ Temple</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="./images/Palmyra_temple.jpg" alt="Picture of Palmyra Temple">
+          <figcaption>Palmyra Temple</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="./images/provo-temple-lds-890642-wallpaper.jpg" alt="Picture of Provo Temple">
+          <figcaption>Provo UT Temple</figcaption>
+        </figure>
+
+      </div>
+      <div>
+
+        <figure>
+          <img src="./images/rexburg-idaho-temple.jpg" alt="Picture of Rexburg Temple">
+          <figcaption>Rexburg ID Temple</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="./images/rio_de_janeiro_temple.jpeg" alt="Picture of Rio De Janiero Temple">
+          <figcaption>Rio de Janiero Temple</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="./images/Salt Lake Temple.jpg" alt="Picture of Temple">
+          <figcaption>Salt Lake City UT Temple</figcaption>
+        </figure>
+      </div>
+      
+
+    </section>
+
+  </main>
+  <footer>
+    <p>
+      <span id="currentyear"></span>
+      
+    </p>
+    <p id="lastModified"></p>
+
+
+  </footer>
+  <script src="./scripts/temples.js"></script>
+</body>
+</html>

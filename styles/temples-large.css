@@ -1,0 +1,58 @@
+@media screen and (min-width: 500px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  figure img {
+    max-width: 400px;
+    max-height: 300px;
+    min-width: 400px;
+    min-height: 300px;
+  }
+  
+ header {
+  display: flex;
+  justify-content: space-between;
+ }
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  
+  .navigation li {
+    display: block;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  nav a {
+    
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  nav a:hover {
+    color: lightgreen;
+  }
+
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+
+  #menu {
+    display: none;
+  }
+}
