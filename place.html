@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="Rio de Janeiro the place I would like to return to Someday">
+  <meta name="author" content="Daniel Jardine">
+  <link rel="stylesheet" href="./styles/place.css">
+  <link rel="stylesheet" href="./styles/place_large.css">
+</head>
+<body>
+  <header>
+    <h1>Brazil</h1>
+  </header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="./images/place_hero_img_large.webp" media="(min-width: 1500px)">
+        <source srcset="./images/place_hero_img.webp" media="(min-width: 1000px)">
+        <img src="./images/place_hero_img_small.webp" alt="Rio de Janeiro Cristo Redentor" width="400" height="200">
+      </picture>
+        <section class="data">
+          <h2>Data</h2>
+          <ul>
+            <li>Area: 3,287,357 sq mi</li>
+            <li>Population: 217,467,955</li>
+            <li>Capital: Brasilia</li>
+            <li>Languages: Portuguese</li>
+            <li>Currency: Brazilian Real</li>
+            <li>Time Zone: GMT-2 - GMT-5</li>
+            <li>Calling Code: +55</li>
+            <li>Internet TLD: .br</li>
+          </ul>
+          
+        </section>
+        <section class="weather">
+          <h2>Weather</h2>
+          <ul id="list">
+            
+          </ul>
+          
+        </section>
+      </div>
+  </main>
+  <footer>
+    <p>
+      <span id="currentyear"></span>
+      
+    </p>
+    <p id="country"></p>
+    <p id="lastModified"></p>
+
+  </footer>
+  <script src="./scripts/place.js" defer></script>
+</body>
+</html>
