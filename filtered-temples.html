@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description"  content="A temples page that changes depending on how big the screen is" >
+  <meta name="author" content="Daniel Jardine">
+  <link rel="stylesheet" href="./styles/filtered-temples.css">
+  <link rel="stylesheet" href="./styles/filtered-temples-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <a id="menu" href="#"></a>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" title="Home" class="active">Home</a></li>
+        <li><a href="#" title="Old" class="active">Old</a></li>
+        <li><a href="#" title="New" class="active">New</a></li>
+        <li> <a href="#" title="Large" class="active">Large</a></li>
+        <li><a href="#" title="Small" class="active">Small</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <main>
+    <h2 id="text">Home</h2>
+    <section class="grid">  
+
+    </section>
+
+  </main>
+  <footer>
+    <p>
+      <span id="currentyear"></span>
+      
+    </p>
+    <p id="lastModified"></p>
+
+
+  </footer>
+  <script src="./scripts/filtered-temples.js" defer></script>
+</body>
+</html>
