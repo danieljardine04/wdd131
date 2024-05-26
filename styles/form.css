@@ -1,0 +1,90 @@
+.wf1 feildset {
+  margin: 2rem 0;
+  padding: .5rem 2%;
+}
+
+.wf1 label {
+  display: block;
+  padding-top: 1rem;
+  font-size: .9rem
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="textbox"],
+.wf1 input[type="date"],
+.wf1 textarea,
+.wf1 select {
+  background-color: #999;
+  display: block;
+  border: solid 1px black;
+  border-radius: 6px;
+  padding: .75rem;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+}
+
+.wf1 input[type="submit"]{
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: lightblue;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.wf1 input[type="submit"]:hover{
+  background-color: darkcyan;
+  color: white;
+}
+
+.wf1 input[type="radio"]{
+  display: none;
+  position: relative;
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+.wf1 p {
+  color: blue;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;;
+}
+
+.stars > label {
+  color: gold;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  caret-color: rgba(0, 0, 0, 0);
+
+}
+
+.stars > label:hover {
+  color: black;
+}
+
+.stars > label::before{
+  content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+  content: "\2605";
+}
+
+footer {
+  margin-top: 10px;
+  background-color: lightblue;
+}
+
+header {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  background-color: lightblue;
+}
