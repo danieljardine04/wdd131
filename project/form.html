@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Haven</title>
+  <meta name="description" content="A Journal webpage to hold your own memories online">
+  <meta name="author" content="Daniel Jardine">
+  <link rel="stylesheet" href="./styles/memory.css">
+</head>
+<body>
+  <header>
+    <h1>Memory Haven</h1>
+    <p>A journal made online</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="entries.html">Entries</a>
+      <a href="form.html">Create Note</a>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="opener">
+      <h2>New Journal Entry</h2>
+      <p>Please fill out the form below to add a new Entry to your Journal.</p>
+    </div>
+    <div>
+      <form class="wf1" action="./entries.html">
+        <label>What is the name of your Journal Entry?</label>
+        <input id="entryName" type="text">
+        <label>Please Write your Journal Entry below</label>
+        <textarea id="entryText"></textarea>
+        <button id="submitButton">Create Journal Entry</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>
+      <span id="currentyear"></span>
+      
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="./scripts/memory.js" defer></script>
+</body>
+</html>
