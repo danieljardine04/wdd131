@@ -121,15 +121,15 @@ main {
   background-color: #bfd7b5;
 }
 
+
 .wf1 input[type="text"],
 .wf1 textarea,
 .container input {
-  background-color: #999;
+  background-color: #bfd7b5;
   display: block;
   border: solid 1px black;
   border-radius: 6px;
   padding: .75rem;
-  color: white;
   width: 100%;
   max-width: 350px;
   text-align: center;
@@ -147,15 +147,19 @@ main {
   margin-bottom: 2rem; 
 }
 
-.opener button, .container button {
+.opener button, .container button, #submitButton {
   padding: 1.5rem;
   background-color: #bfd7b5;
   font-size: large;
 
 }
 
-.opener button:hover, .container button:hover {
+.opener button:hover, .container button:hover, #submitButton:hover {
   background-color: #FC814A;
+}
+
+#submitButton {
+  margin-top: 5px;
 }
 
 
