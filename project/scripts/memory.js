@@ -11,6 +11,14 @@ var idCount = 0;
 paraEl.textContent = "©2024 Daniel Jardine New York";
 paragraphEl.textContent = document.lastModified;
 
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', function(){
+  mainnav.classList.toggle('show');
+  hambutton.classList.toggle('show');
+});
+
 var journalHolder = [];
 
 function createJournal(){
@@ -139,6 +147,8 @@ function addEntries(){
     let entryName = document.createElement("h3");
     let entrySummary = document.createElement("p");
 
+
+    entrydiv.classList.add("entry");
     entryName.textContent = entry.name;
     entrySummary.textContent = entry.summary;
     entrydiv.appendChild(entryName);

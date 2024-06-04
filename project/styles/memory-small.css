@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap;');
-@media screen and (min-width: 500px){
-
 body {
   font-family: 'roboto', sans-serif;
   margin: 0px;
@@ -17,27 +14,22 @@ header, footer {
 
 header {
   margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding-bottom: 10px;
+  
 }
 
 header p {
   position: absolute;
   left: 4%;
-  top: 5%;
+  top: 10%;
 
 }
 
 nav {
   display: flex;
-  justify-content: flex-end;
-  text-align: right;
-}
+  align-items: center;
 
-nav ul {
-  list-style-type: none;
-  display: flex;
 }
 
 nav a {
@@ -46,19 +38,39 @@ nav a {
   padding: 10px;
   color: #bfd7b5;
 }
+.navigation a {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  
+  
+}
 
 nav a:hover {
   color: #FC814A;
 }
 
 .navigation li {
-  display: block;
-  justify-content: space-between;
-  padding: 10px;
+  display: none;
 }
 
 #menu{
-  display: none;
+  display: block;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#menu::before{
+  content: "☰";
+}
+
+.show li {
+  display: block;
+}
+
+#menu.show::before {
+  content: "X";
 }
 
 main {
@@ -66,8 +78,6 @@ main {
   margin-left: 10%;
   margin-right: 10%;
 }
-
-
 
 .card {
   border: solid 2px black;
@@ -90,16 +100,30 @@ main {
   color: white;
 }
 
-.entries {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.container {
+  text-align: center;
+  align-content: center;
+  position: block;
+  margin-bottom: 2rem;
+
 }
 
+.container input[type="text"]{
+  background-color: #999;
+  color: white
+}
 
-
+.entry{
+  display: block;
+  border: solid 2px black;
+  padding: 1rem;
+  margin: 3px;
+  background-color: #bfd7b5;
+}
 
 .wf1 input[type="text"],
-.wf1 textarea {
+.wf1 textarea,
+.container input {
   background-color: #999;
   display: block;
   border: solid 1px black;
@@ -107,21 +131,33 @@ main {
   padding: .75rem;
   color: white;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   text-align: center;
   margin: 3px
 }
 
-.container input[type="text"]{
+.container input[type="text"] {
+  background-Color: #bfd7b5;
+  color: black;
   align-items: center;
-  display: flex;
-
 }
 
-.opener h2, p, button {
+.opener {
   text-align: center;
-  align-items: center;
+  margin-bottom: 2rem; 
 }
+
+.opener button, .container button {
+  padding: 1.5rem;
+  background-color: #bfd7b5;
+  font-size: large;
+
+}
+
+.opener button:hover, .container button:hover {
+  background-color: #FC814A;
+}
+
 
 form {
   border: solid 2px #80a1c1;
@@ -129,12 +165,3 @@ form {
  
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
-}
-
-}
